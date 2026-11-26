@@ -259,3 +259,5 @@ p{margin:0}
 .works-grid--6{grid-template-columns:repeat(3,1fr)}
 @media(max-width:900px){.works-grid{grid-template-columns:repeat(3,1fr)}}
 @media(max-width:560px){.works-grid,.works-grid--6{grid-template-columns:repeat(2,1fr);gap:8px}}
+
+@media(max-width:560px){.works-grid--out .works__g:last-child{grid-column:span 2;aspect-ratio:3/2}}
