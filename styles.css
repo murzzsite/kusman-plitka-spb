@@ -244,3 +244,10 @@ p{margin:0}
   .wall.on i{animation:none}
   .st{opacity:1}
 }
+
+/* works */
+.works{display:grid;grid-template-columns:1.9fr 1fr;grid-auto-rows:clamp(260px,38vw,460px);gap:16px;align-items:stretch}
+.works__f{margin:0;background:var(--sand);overflow:hidden}
+.works__f img{display:block;width:100%;height:100%;object-fit:cover}
+.works__f--wide{aspect-ratio:auto}
+@media(max-width:760px){.works{grid-template-columns:1fr;grid-auto-rows:auto}.works__f img{height:auto}.works__f--tall{max-width:320px}}
